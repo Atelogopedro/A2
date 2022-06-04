@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+header{
+    background-color: #100f10;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    color: #fafafa;
+}
+
+.logo h2, h1{
+    font-weight: normal;
+    font-size: 18px;
+}
+.menu{
+    text-align: right;
+    width: 80%;
+    
+}
+
+.menu a{
+   
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.4s;
+    color: #fafafa;
+
+}
+
+.menu a:hover{
+    color: #ff0043
+    
+}
