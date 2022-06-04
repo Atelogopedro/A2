@@ -12,28 +12,31 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>Formulário</title>
 </head>
 <body>
-    <header>
-        <div class="center">
-            <div class="logo">
-                <h1>Fale Conosco</h1>
-             <div class="menu">
-                 <a href="index.html">
-                     Home
-                 </a>
-                 <a href="quemsoueu.html">
-                     Sobre Nós
-                 </a>
-                 <a href="contato.html">
-                     Contato
-                 </a>
-             </div>
-            </div>
-        </div> 
-    </header>
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-house mx-2"></i>Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html"><i class="bi bi-journal-text mx-2"></i>Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre-nos.html"><i class="bi bi-person mx-2"></i>Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html"><i class="bi bi-envelope mx-2"></i>Contato</a>
+          </li>
+  </nav>
 
     <section>
         <form>
@@ -41,19 +44,19 @@
                 <div class="row">
                     <div class="col text-center"> 
                         <div class="my-3">
-                            <label class="fw-bold">Nome</label>
+                            <label class="fw-bold text-light">Nome</label>
                             <input class="fw-bold" type="text" placeholder="Digite o seu nome" name="nome" required />
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold">E-mail</label>
+                            <label class="fw-bold text-light">E-mail</label>
                             <input class="fw-bold" type="text" placeholder="Digite o seu e-mail" name="e-mail" required />
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold">Telefone</label>
+                            <label class="fw-bold text-light">Telefone</label>
                             <input class="fw-bold" type="text" placeholder="Digite o seu Telefone" name="Telefone" required />
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold">Estado:</label>
+                            <label class="fw-bold text-light">Estado:</label>
                             <select class="fw-bold" >
                                 <option class="fw-bold" value="0">Selecione</option>
                                 <option class="fw-bold" value="PA">Pará</option>
@@ -62,7 +65,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold">Cidade</label>
+                            <label class="fw-bold text-light">Cidade</label>
                             <select class="fw-bold" >
                                 <option class="fw-bold" value="0">Palmas</option>
                                 <option class="fw-bold" value="1">Belém</option>
@@ -73,16 +76,16 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold" for="Sexo">Sexo: </label>
+                            <label class="fw-bold text-light" for="Sexo">Sexo: </label>
                             <input type="radio" name="sexo">
-                            <label class="fw-bold" for="Masculino">Masculino</label>
+                            <label class="fw-bold text-light" for="Masculino">Masculino</label>
                             <input type="radio" name="sexo">
-                            <label class="fw-bold" for="feminino">Feminino</label>
+                            <label class="fw-bold text-light" for="feminino">Feminino</label>
                             <input type="radio" name="sexo">
-                            <label class="fw-bold" for="Outros">Outros</label><br>
+                            <label class="fw-bold text-light" for="Outros">Outros</label><br>
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold" for="Motivo do Contato">Motivo do Contato:</label>
+                            <label class="fw-bold text-light" for="Motivo do Contato">Motivo do Contato:</label>
                             <select class="fw-bold" >
                                 <option class="fw-bold" value="Motivo">Motivo</option>
                                 <option class="fw-bold" value="Dúvida">Dúvida</option>
@@ -91,8 +94,8 @@
                             </select>
                         </div>
                         <div>
-                            <legend class="fw-bold">Mensagem</legend>
-                            <textarea name="msg" id="" cols="40" rows="15"></textarea>
+                            <legend class="fw-bold text-light">Mensagem</legend>
+                            <textarea class="fw-bold" name="msg" id="" cols="40" rows="15"></textarea>
                         </div>
                         <div class="mt-2">
                             <input class="fw-bold"  type="submit" value="Enviar">
