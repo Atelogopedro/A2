@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: #100f10;
+    display: flex;
+	flex-direction: column;
+}
+
+.center{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+header{
+    background-color: #100f10;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    color: #fafafa;
+}
+
+.logo h2, h1{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.container-fluid img {
+    max-width:3000px;
+    max-height:700px;
+    
+}
+
+h1, p {
+    color: #fafafa;
+}
+
+.card {
+    margin: auto;
+}
+
+h5, p {
+    color: #100f10;
+}
+
+.btn {
+    background-color: #100f10;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-fluid {
+    margin-right: auto;
+}
+
+footer {
+    font-size: 16px;
+    background: #343434;
+    padding: 1em 0 0.5em 0;  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    text-align: center;
+  }  
+    
+.mt-50{
+    margin-top: 50px;
+  }
+
+.sub-titulo > h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    font-size: 16px;
+    background: #343434;
+    padding: 1em 0 0.5em 0;  
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    text-align: center;
+}
+
+.gradient-custom {
+    background: #f6d365;
+    
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(255, 251, 250))
+    }
+
+.col-md-4 {
+    border-radius: 50%;
+}
+
+.vh-100 {
+    padding-bottom: 0px;
+}
+
+.soro {
+    margin-left: 750px;
+}
+
+.nav-item {
+    padding-top: 25px;
+}
+
+.nav-link {
+    vertical-align: middle;
+    height: 5em;
+}
+
+.carousel-item {
+    padding-left: 250px;
+}
+
+.sub p, h2{
+    color: #fafafa;
+    text-align: justify;
+    padding-left: 250px;
+
+    width: 1050px;
+    height: auto;
+    
+}
+
+.sub h2 {
+    margin-top: 50px;
+}

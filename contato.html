@@ -13,31 +13,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formatacoes.css">
     <title>Formulário</title>
 </head>
 <body>
     <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="bi bi-house mx-2"></i>Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html"><i class="bi bi-journal-text mx-2"></i>Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre-nos.html"><i class="bi bi-person mx-2"></i>Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato.html"><i class="bi bi-envelope mx-2"></i>Contato</a>
-          </li>
-  </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house mx-2"></i>HOME</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><i class="bi bi-journal-text mx-2"></i>BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemsou.html"><i class="bi bi-person mx-2"></i>SOBRE NÓS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html"><i class="bi bi-envelope mx-2"></i>CONTATO</a>
+                    </li>
+                    <a class="soro">
+                          <img
+                            src="img/logo-unitins.ico"
+                            height="100"
+                          />
+                        </a>
+    </nav> 
+  <div class="sub-titulo">
+    <h1>Formulário de Contato</h1>
+</div> 
     <section>
         <form>
             <div class="container">
@@ -45,15 +50,15 @@
                     <div class="col text-center"> 
                         <div class="my-3">
                             <label class="fw-bold text-light">Nome</label>
-                            <input class="fw-bold" type="text" placeholder="Digite o seu nome" name="nome" required />
+                            <input class="fw-bold" type="text" placeholder="Digite o seu nome" name="nome" maxlength="35" />
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">E-mail</label>
-                            <input class="fw-bold" type="text" placeholder="Digite o seu e-mail" name="e-mail" required />
+                            <input class="fw-bold" type="text" placeholder="Digite o seu e-mail" name="e-mail"/>
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">Telefone</label>
-                            <input class="fw-bold" type="text" placeholder="Digite o seu Telefone" name="Telefone" required />
+                            <input class="fw-bold" type="number" placeholder="Digite o seu Telefone" name="Telefone"/>
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">Estado:</label>
@@ -67,27 +72,29 @@
                         <div class="mb-3">
                             <label class="fw-bold text-light">Cidade</label>
                             <select class="fw-bold" >
-                                <option class="fw-bold" value="0">Palmas</option>
-                                <option class="fw-bold" value="1">Belém</option>
-                                <option class="fw-bold" value="2">Santarém</option>
-                                <option class="fw-bold" value="3">Manaus</option>
-                                <option class="fw-bold" value="4">Tabatinga</option>
-                                <option class="fw-bold" value="5">Araguaína</option>
+                                <option class="fw-bold" value="0">Selecione</option>
+                                <option class="fw-bold" value="1">Palmas</option>
+                                <option class="fw-bold" value="2">Belém</option>
+                                <option class="fw-bold" value="3">Santarém</option>
+                                <option class="fw-bold" value="4">Manaus</option>
+                                <option class="fw-bold" value="5">Tabatinga</option>
+                                <option class="fw-bold" value="6">Araguaína</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="fw-bold text-light" for="Sexo">Sexo: </label>
-                            <input type="radio" name="sexo">
+                            <label class="fw-bold text-light" for="Sexo">Sexo:</label>
                             <label class="fw-bold text-light" for="Masculino">Masculino</label>
                             <input type="radio" name="sexo">
                             <label class="fw-bold text-light" for="feminino">Feminino</label>
                             <input type="radio" name="sexo">
-                            <label class="fw-bold text-light" for="Outros">Outros</label><br>
+                            <label class="fw-bold text-light" for="Outros">Outros</label>
+                            <input type="radio" name="sexo">
+                            
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light" for="Motivo do Contato">Motivo do Contato:</label>
                             <select class="fw-bold" >
-                                <option class="fw-bold" value="Motivo">Motivo</option>
+                                <option class="fw-bold" value="Motivo">Selecione</option>
                                 <option class="fw-bold" value="Dúvida">Dúvida</option>
                                 <option class="fw-bold" value="Elogio">Elogio</option>
                                 <option class="fw-bold" value="Outros">Outros</option>
@@ -95,7 +102,7 @@
                         </div>
                         <div>
                             <legend class="fw-bold text-light">Mensagem</legend>
-                            <textarea class="fw-bold" name="msg" id="" cols="40" rows="15"></textarea>
+                            <textarea class="fw-bold" name="msg" id="" cols="40" rows="5"></textarea>
                         </div>
                         <div class="mt-2">
                             <input class="fw-bold"  type="submit" value="Enviar">
@@ -105,8 +112,15 @@
                     </div>
 
         </form>
-        
-    </section>
 
+    </section>
+    <section class="footer">
+        <div class="container">
+            <ul>
+                <p><p> Desenvolvido por Pedro e Paulo na disciplina de <a href="https://www.unitins.br/nportal/sistemas-de-informacao-palmas" target="_blank" rel="external">Desenvolvimento Front-End</a></p>
+                <p>24/05/2022</p>
+            </ul>
+        </div>
 </body>
+      <script src="validação.js"></script>
 </html>
