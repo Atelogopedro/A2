@@ -52,16 +52,18 @@
                     <div class="col text-center">
                         <div class="my-3">
                             <label class="fw-bold text-light">Nome</label>
-                            <input class="fw-bold" type="text" placeholder="Digite o seu nome" name="nome"
-                                maxlength="35" />
+                            <input class="fw-bold" id="nome" type="text" placeholder="Digite o seu nome" name="nome"
+                                required />
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">E-mail</label>
-                            <input class="fw-bold" type="text" placeholder="Digite o seu e-mail" name="e-mail" />
+                            <input class="fw-bold" type="text" placeholder="Digite o seu e-mail" name="e-mail"
+                                required />
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">Telefone</label>
-                            <input class="fw-bold" type="number" placeholder="Digite o seu Telefone" name="Telefone" />
+                            <input class="fw-bold" type="number" placeholder="Digite o seu Telefone" name="Telefone"
+                                required />
                         </div>
                         <div class="mb-3">
                             <label class="fw-bold text-light">Estado:</label>
@@ -87,7 +89,7 @@
                         <div class="mb-3">
                             <label class="fw-bold text-light" for="Sexo">Sexo:</label>
                             <label class="fw-bold text-light" for="Masculino">Masculino</label>
-                            <input type="radio" name="sexo">
+                            <input type="radio" name="sexo" required />
                             <label class="fw-bold text-light" for="feminino">Feminino</label>
                             <input type="radio" name="sexo">
                             <label class="fw-bold text-light" for="Outros">Outros</label>
@@ -108,7 +110,7 @@
                             <textarea class="fw-bold" name="msg" id="" cols="40" rows="5"></textarea>
                         </div>
                         <div class="mt-2">
-                            <input class="fw-bold" type="submit" value="Enviar">
+                            <input class="botao" type="submit" value="Enviar">
                         </div>
                     </div>
                 </div>
@@ -124,7 +126,7 @@
                 <p> Desenvolvido por Pedro e Paulo na disciplina de <a
                         href="https://www.unitins.br/nportal/sistemas-de-informacao-palmas" target="_blank"
                         rel="external">Desenvolvimento Front-End</a></p>
-                <p>01/06/2022</p>
+                <p>03/06/2022</p>
             </ul>
         </div>
 </body>
